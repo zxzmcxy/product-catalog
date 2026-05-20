@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>澳捷尔选品目录</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+.container {
+    text-align: center;
+}
+.container h1 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+.container .subtitle {
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+    padding: 28px 24px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+.card:hover, .card:active {
+    background: rgba(255,255,255,0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+.card .icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+.card .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.card .desc {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>澳捷尔选品目录 2026</h1>
+    <p class="subtitle">616 个商品 · 触屏适配</p>
+    <div class="cards">
+        <a href="catalog.html" class="card">
+            <div class="icon">📋</div>
+            <div class="title">选品目录</div>
+            <div class="desc">按品类筛选浏览全部商品</div>
+        </a>
+        <a href="vote.html" class="card">
+            <div class="icon">🗳️</div>
+            <div class="title">选品投票</div>
+            <div class="desc">选择你心仪的商品提交投票</div>
+        </a>
+    </div>
+</div>
+</body>
+</html>
